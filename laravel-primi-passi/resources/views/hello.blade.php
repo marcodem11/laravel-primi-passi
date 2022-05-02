@@ -8,12 +8,30 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Hello</h1>
-    </body>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  .container{
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .title{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+  }
+</style>
+<body>
+  <div class="container">
+    <h1 class="title">{{$title}}</h1>
+
+  </div>
+</body>
 </html>
