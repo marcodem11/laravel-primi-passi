@@ -18,6 +18,13 @@
     max-width: 100%;
     display: block;
   }
+
+  a{
+    text-decoration: none;
+    color: currentColor;
+  }
+
+
   .container{
     width: 1024px;
     margin: 0 auto;
@@ -27,8 +34,29 @@
     color: red;
     font-size: 60px;
   }
+
+  header{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+    background-color: blue;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+  }
+  header a:hover{
+    text-decoration: underline
+  }
+
 </style>
 <body>
+<header>
+    <a href="{{ route('contatti') }}"> Contatti </a>
+    <a href="{{ route('about') }}"> About </a>
+    <a href="{{route('gallery')}}"> Gallery </a>
+    <a href="{{route('where')}}"> Where </a>
+  </header>
   <div class="container">
     <h1 class="title">{{$title}}</h1>
 
